@@ -1,0 +1,46 @@
+<div id="login" class="login">
+		<div class="loginHeader">
+			<span>闪传平台应用推荐墙自助维护系统</span>
+		</div>
+  		<div class="loginForm">
+	  		<form class="form-horizontal">
+			  <div class="form-group" style="margin-bottom:24px ;color:#616161 ;height:41px;font-size:18px">
+			    <label for="inputEmail3" class="col-sm-2 control-label" style="font-weight:500">用户</label>
+			    <div class="col-sm-10" ng-class="errorLogin" >
+			      <input type="admin" ng-focus="focus()" class="form-control" id="uidInput" placeholder="Userid" style="height:41px">
+			    </div>
+			  </div>
+			  
+			  <div class="form-group" style="margin-bottom:24px ;color:#616161;height:41px;font-size:18px">
+			    <label for="inputPassword3" class="col-sm-2 control-label" style="font-weight:500">密码</label>
+			    <div class="col-sm-10" ng-class="errorLogin">
+			      <input type="password" class="form-control" ng-focus="focus()" id="inputPassword3" placeholder="Password" style="height:41px">
+			    </div>
+			  </div>
+			  
+			   <div class="form-group" style="margin-bottom:24px ;color:#616161;font-size:18px">
+			    <label for="inputPassword3" class="col-sm-2 control-label" style="font-weight:500">语言</label>
+			    <div class="col-sm-10">
+			      <select class="form-control" style="display:inline-block;line-height:41px;height:41px;margin-top:5px" ng-model="lang">
+  					<option value={{obj['code']}} ng-repeat = "obj in langCountry">{{obj['name']}}</option>
+				  </select>
+			    </div>
+			  </div>
+			  
+			   <div id="loginTipMsg" style="margin-bottom:20px ;color:red;margin-left:72px;display:none;position:absolute;top:108px">
+			     <span>用户名或者密码错误</span>
+			  </div>
+			  
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" id="submitUser" class="btn btn-default bntBg" ng-click="loginApp()">登陆</button>
+			    </div>
+			  </div>
+			</form>
+			
+  		</div>
+  
+  	<div style="position:absolute;left:100px;top:200px;width:500px; height:200px;display:none">
+  		<alert type="danger">用户名不对或者密码错误</alert>
+  	</div>
+  </div>	

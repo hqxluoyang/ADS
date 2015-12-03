@@ -1,0 +1,3 @@
+<ul>
+	<li ng-repeat="obj in navPage" ng-style="navUser" ng-class="navIndex==$index ? 'navBg' : false" ng-click="clickNav($index)"><a ui-sref={{obj["url"]}}>{{obj['text']}}</a></li>	
+</ul>  

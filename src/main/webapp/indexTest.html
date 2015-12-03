@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=720000" />
+  <title>闪传应用墙管理系统</title>
+  <link rel="stylesheet" href="css/multiple-select.css" />
+<link rel="stylesheet" href="css/app-built.css?v=0.0.1">
+<link rel="shortcut icon" href="favicon.ico" >
+</head>
+<body>
+  
+  <div id=main class="main" ng-controller="mainControl">
+    
+    <div ng-include="'partials/header.html'" id="top" class="top" ng-controller="header"></div>
+    <div ng-include="'partials/left.html'" id="left" class="left" ng-controller="left"></div>
+    
+    <div id="container" class="containerView">
+      <div ui-view class="my-animation ng-animate"></div>
+    </div>
+    
+    <div id="foter" class="foter">
+    	<span>北京安奇智联科技有限公司</span>
+    </div>
+    
+    <div id="panelControl" ng-include="'partials/panel.html'">
+    </div>
+     
+  </div>
+  
+  <div id="bgLogin" class="bglogin">
+  	<div class="headS"></div>
+  </div>
+ <script data-main="js/main.js" src="js/lib/requirejs/require.js"></script>
+</body>
+</html>

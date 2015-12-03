@@ -1,0 +1,39 @@
+<div class="release" id="fslistPage">
+
+	<div class="rowLine search">
+		
+		<div class="bg divLine width150" style="margin-left:-50px;left:50%"><button type="button" ng-click = addNewPic() class="btn btn-primary">添加开屏广告</button></div>
+		
+	</div>
+
+	<div class="rowLine header">
+		<div class="bg divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine width40"><span class="num">{{header['icon']}}</span></div>
+		<div class="bg divLine width100"><span class="name">{{header['title']}}</span></div>
+		
+		<div class="bg divLine"><span class="position">{{header['country']}}</span></div>
+		<div class="bg divLine"><span class="type">{{header['language']}}</span></div>
+		<div class="bg divLine"><span class="release">{{header['testStatu']}}</span></div>
+		<div class="bg divLine"><span class="release">{{header['release']}}</span></div>
+		
+	</div>
+	
+	<div id="fsListGrid">
+	
+		<div class="rowLine" ng-repeat="obj in listPic" ng-class-odd="'bgeee'">
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="divLine width40 hpoint"><img class="imagePhone" ng-src={{obj['png_path']}} ng-click="clickImage(obj)"></div>
+			<div class="divLine width100 hpoint" ng-click="showDetail(obj)"><span class="name" >{{obj['title']}}</span></div>
+			<div class="divLine"><span class="type">{{obj['country']}}</span></div>
+			<div class="divLine"><span class="developer">{{obj["language"]}}</span></div>
+			<div class="divLine" style="top:6px"><span class="developer"><input type="checkbox" style="width:20px;height:20px" ng-model="obj['tcode']" ng-change="changeBox(obj)"></span></div>
+			
+			<div class="divLine"><button type="button" ng-click=putawayAd(obj) class="btn btn-info" >发布</button></div>	
+		</div>
+	
+	</div>
+	
+	<div class = "submitApp">
+		
+	</div>	
+</div>	

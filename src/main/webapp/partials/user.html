@@ -1,0 +1,36 @@
+<div class="release" id="userControlPage">
+	
+	<div class="rowLine header">
+		<div class="divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine"><span class="name">{{header['user_id']}}</span></div>
+		<div class="bg divLine"><span class="channel">{{header['name']}}</span></div>
+		
+		<div class="bg divLine"><span class="type">{{header['type']}}</span></div>
+		<div class="bg divLine"><span class="state">{{header['state']}}</span></div>
+	
+		<div class="bg divLine width150"><span class="position">{{header['channel']}}</span></div>
+		<div class="bg divLine width150"><span class="position">{{header['org']}}</span></div>
+		<div class="bg divLine"><span class="release">{{header['delUser']}}</span></div>
+		<div class="bg divLine"><span class="release">{{header['changePass']}}</span></div>
+		
+		<div class="bg divLine width150"><button type="button" ng-click = "addUserPanel()" class="btn btn-primary">添加用户</button></div>
+		
+		
+	</div>
+	<div id="userGrid">
+		<div class="rowLine" ng-repeat="obj in userAll" ng-class-odd="'bgeee'">
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="bg divLine"><span class="name">{{obj['user_id']}}</span></div>
+			<div class="bg divLine"><span class="channel">{{obj['name']}}</span></div>
+			
+			<div class="bg divLine"><span class="type">{{obj['type']}}</span></div>
+			<div class="bg divLine" ng-class="obj['status']=='已停用' ? userR : userG"><span class="state">{{obj['status']}}</span></div>
+			<div class="bg divLine width150"><span class="position">{{obj['channel']}}</span></div>
+			<div class="bg divLine width150"><span class="position">{{obj['org']}}</span></div>
+			
+			<div class="divLine"><button type="button"  ng-click="delUser(obj , $index)" class="btn btn-info" ng-show="obj['user_id'] != 'admin'">{{obj['status']=="已停用" ? "启用" : "停用"}}</button></div>
+			<div class="divLine width100"><button type="button" ng-click="chPassword(obj , $index)" class="btn btn-info">修改密码</button></div>
+		</div>
+	</div>
+	
+</div>	

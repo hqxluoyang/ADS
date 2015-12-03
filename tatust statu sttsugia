@@ -1,0 +1,183 @@
+[33mcommit cfbc5702499f8fd11d26c1e38ca209438ccac133[m
+Merge: b83f75c d33c95b
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Thu Jul 9 18:29:07 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit b83f75c8676f0333ef23ba8e4a5f87872396496d[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Thu Jul 9 18:28:53 2015 +0800
+
+    count
+
+[33mcommit d33c95b6967c8c96edcc70ff4bc62d9e04b51f73[m
+Author: Administrator <admin@example.com>
+Date:   Thu Jul 9 11:34:52 2015 +0800
+
+    adblock 添加映射路径
+
+[33mcommit 965ba9a7eb662df8347ce2c2c7a6ec703cb3b1bb[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Thu Jul 9 11:27:05 2015 +0800
+
+    ad block url new
+
+[33mcommit e761033cf619c18b0b3c018ff4e37f9325cae62e[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Wed Jul 8 11:00:14 2015 +0800
+
+    sql txt
+
+[33mcommit 8ef459466d926b8378dcb79d36f4e8ef2bd38536[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Wed Jul 8 10:45:19 2015 +0800
+
+    jdbc
+
+[33mcommit 04fef5551b26721148a7e58f79cc3d639d74f558[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Wed Jul 8 10:13:39 2015 +0800
+
+    db bak
+
+[33mcommit 85430979dcefaacd8343b7d740aeaafae08cac48[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Wed Jul 8 10:07:51 2015 +0800
+
+    count
+
+[33mcommit 22d52e766fb1d36e31130e834203dbdf19e59623[m
+Merge: 3f2e4a8 82cd93d
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Tue Jul 7 08:51:43 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 82cd93d4ee6aa1414a4db803300dcc52e5991b41[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Tue Jul 7 08:47:05 2015 +0800
+
+    appamin
+
+[33mcommit 3f2e4a82e0312ab642b2a2f997affdcdc8247e39[m
+Merge: 9805365 28feca5
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Tue Jul 7 08:46:16 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 9805365fa66ee1190553b34220bdb8c3fafa53c9[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Tue Jul 7 08:45:38 2015 +0800
+
+    count
+
+[33mcommit 28feca59596cfe058289dfa1c9b2c8e3deb3929a[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Mon Jul 6 18:25:29 2015 +0800
+
+    imgurl
+
+[33mcommit 7fd36ab93627be759d14e5367479160e2b6c13fd[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Mon Jul 6 14:41:54 2015 +0800
+
+    waiter
+
+[33mcommit 549b9a0a8f94112146a525280a40ec00d91c25a1[m
+Merge: 1d53336 a848131
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Mon Jul 6 13:52:31 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 1d5333690b3c18b2e79c7c4a07c85e40e3cddae3[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Mon Jul 6 13:52:25 2015 +0800
+
+    count
+
+[33mcommit a84813134cf7a35806db2e21930cff7d9b21e72d[m
+Merge: a5c4155 7237ce0
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Mon Jul 6 10:41:13 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit a5c41557b97b67897b3a05fdf7f72d4875c79c44[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Mon Jul 6 10:39:34 2015 +0800
+
+    pager
+
+[33mcommit 7237ce0c359550c5e9b89039998a9a736a8ec6b1[m
+Merge: 7fac1e5 4ea3398
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 18:34:09 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 7fac1e5320474a023009135c4f244b9d924ade52[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 18:33:57 2015 +0800
+
+    changerouter
+
+[33mcommit 4ea33983a8807ae615a1e08899dc22f5dd31df00[m
+Merge: b7f6a11 2aec540
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Fri Jul 3 18:28:18 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit b7f6a11419d928b26cd0e9b7045adaab8511160d[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Fri Jul 3 18:28:10 2015 +0800
+
+    app language
+
+[33mcommit 2aec54079f3f33a18e6f17067183cfe73962f41e[m
+Merge: 9233c5c acc5401
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 18:16:48 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 9233c5c21f211b99509032689b740124c998c3a9[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 18:16:43 2015 +0800
+
+    count
+
+[33mcommit acc54012dd420e246c49999c9496f44806ad8287[m
+Merge: 76bbf4e 32b69a1
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Fri Jul 3 17:50:16 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 76bbf4ece943e298dd83cde0daf309a696f3742d[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Fri Jul 3 17:49:28 2015 +0800
+
+    user app
+
+[33mcommit 32b69a1b2abf86a08dafd08b4a7210c23efb2a69[m
+Merge: 10f614e 132288a
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 16:03:11 2015 +0800
+
+    Merge branch 'master' of 192.168.1.20:root/appadmin
+
+[33mcommit 10f614ec49a41492b67c75b1ce23a509b4f87ffa[m
+Author: houqingxin <houqingxin@shanchuan.cn>
+Date:   Fri Jul 3 16:03:06 2015 +0800
+
+    count
+
+[33mcommit 132288aef3bd0318da161636c960c4dde6c193b3[m
+Author: zhushaolong <zhushaolong@shanchuan.cn>
+Date:   Fri Jul 3 15:59:01 2015 +0800
+
+    year

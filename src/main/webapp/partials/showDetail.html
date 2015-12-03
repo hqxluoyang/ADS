@@ -1,0 +1,13 @@
+<div class ="header">
+    <span class="title">列表详细</span>
+	<button type="button" class="bntClose close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="subApp">
+	
+	<div class="submit" ng-repeat="obj in currentList">
+		<label class="labelApp">{{obj['showName']}}</label>
+		<input class="inR" style="background:transparent; border:0px solid #ffffff ;margin-left:25px" ng-model="obj['val']" readonly>
+	</div>	
+</div>	
+	

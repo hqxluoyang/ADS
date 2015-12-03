@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../welineserver/WeLineServer.iml" filepath="$PROJECT_DIR$/../welineserver/WeLineServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appadmin.iml" filepath="$PROJECT_DIR$/appadmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bak_awsdb/bak_awsdb.iml" filepath="$PROJECT_DIR$/../bak_awsdb/bak_awsdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../deploybrand/deploybrand.iml" filepath="$PROJECT_DIR$/../deploybrand/deploybrand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../main_scanmd5/main_scanmd5.iml" filepath="$PROJECT_DIR$/../main_scanmd5/main_scanmd5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xendertop_old/shanchuan.iml" filepath="$PROJECT_DIR$/../xendertop_old/shanchuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springbootdemo/springboot.iml" filepath="$PROJECT_DIR$/../springbootdemo/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xendertop/top.iml" filepath="$PROJECT_DIR$/../xendertop/top.iml" />
+    </modules>
+  </component>
+</project>

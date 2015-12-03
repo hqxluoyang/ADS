@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="IdProvider" IDEtalkID="183B947A56442760D3EE45312B31102B" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../welineserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../deploybrand/pom.xml" />
+        <option value="$PROJECT_DIR$/../springbootdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/../xendertop/pom.xml" />
+        <option value="$PROJECT_DIR$/../bak_awsdb/pom.xml" />
+        <option value="$PROJECT_DIR$/../xendertop_old/pom.xml" />
+        <option value="$PROJECT_DIR$/../main_scanmd5/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>

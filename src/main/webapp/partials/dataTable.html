@@ -1,0 +1,54 @@
+
+
+<table class="tablecss">  
+<tr>    
+ <td>       
+  <table  border="0" width="100%" class="trcss head">         
+   <tr>            
+    <th ng-style="{{styleWidth}}" style="text-align: center;" ng-repeat="obj in tableHead"><p ng-show="$index != 0" ><img src="{{obj['imgurl']}}" ng-class="tableImg"/></p>{{obj['name']}}</th>
+   </tr>       
+  </table>    
+ </td>  
+</tr>  
+<tr>    
+ <td>       
+  <div style="width:100%px; overflow:hiden;" id="gridCount">  
+
+  
+  <table cellspacing="0" cellpadding="1" border="0" width="100%">           
+   <tr ng-repeat="obj in tableData" ng-class-odd="'bgeee'" class="trcss">             
+    <td ng-style="{{styleWidth}}">{{obj['date']}}</td>             
+    <!--<td ng-style="{{styleWidth}}" ng-repeat="nameCount in obj['data'] track by $index">{{nameCount['showcount']}} | {{nameCount['clickcount']}}</td>	-->
+    <td ng-style="{{styleWidth}}" ng-repeat="nameCount in obj['data'] track by $index"><span ng-show="showAd == 'ad'">{{nameCount['downloadcount']}}</span><span ng-show="showAd != 'ad'">{{nameCount['showcount']}} | {{nameCount['clickcount']}}</span></td>
+   </tr>           
+     
+  </table>
+  <table  border="0" width="100%" class="trcss foter">         
+   <tr>            
+    <th ng-style="{{styleWidth}}" style="text-align: center;" ng-repeat="total in totalData"><span ng-show="showAd == 'ad'">{{total['downloadcount']}}</span><span ng-show="showAd != 'ad'" ng-if="$index==0" >合计</span><span ng-show="showAd != 'ad'" ng-if="$index!=0" >{{total['showcount']}} | {{total['clickcount']}}</span></th>
+   </tr>       
+  </table>  
+  </div>    
+ </td>  
+</tr>
+</table>
+
+
+<nav class="tableNav">
+  <ul class="pagination">
+    <li>
+      <a aria-label="Previous" ng-click="pre()">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li ng-repeat="obj in page" ng-click="clickNav($index)" ><span ng-class="navIndex==$index ? 'navCss' : false">{{obj}}</span></li>
+    <li>
+      <a aria-label="Next" ng-click="next()">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+

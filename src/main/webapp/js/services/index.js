@@ -1,0 +1,20 @@
+
+define([ "upload" ,
+			"allControl" , 
+			"timeout" , 
+			"userLogin",
+			"panelCon",
+			"routeChange",
+			"canvasDraw",
+			"leftControl",
+			"serAddpic",
+			"fsR",
+			"serFsList",
+			"drawtable",
+			"serSoldout",
+			"apprealse",
+			"serapplist",
+			"serCount",
+			"layoutContainer",
+			""
+			], function () {});

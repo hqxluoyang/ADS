@@ -1,0 +1,59 @@
+<div class ="header">
+    <span class="title">开屏广告</span>
+	<button type="button" class="bntClose close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="subApp">
+	
+	<div class="submit">
+        <label class="labelApp">国家</label>
+   
+        <select id="ms" multiple="multiple">
+            <option ng-repeat = "obj in country" value="{{$index}}">{{obj['name']}}</option>
+        </select>
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp">目标语言</label>
+		<select class="form-control" style="width:200px;display:inline-block;margin-left:20px;margin-top:5px" ng-model="newpic['lang']">
+  			<option value={{obj['code']}} ng-repeat = "obj in countryLang">{{obj['name']}}</option>
+		</select>
+		
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp"></label>
+		<button class="btn btn-default" style="margin-left:20px;margin-top:5px;" type="submit" ng-click="uploadPic()" >广告图片(上传)</button>
+		<div class="uploadProgress"  id="picUploadPro">
+		</div>
+	</div>
+	
+	<div id="picUploadCon">
+		<div style="margin-left:124px;margin-top:5px"><img id="uploadPicSrc" style="width:50px;height:95px"/></div>
+		<span class="title">以下输入请按照目标国家的语言输入</span>
+		
+		<div class="submit" style="margin-top:20px">
+			<label class="labelApp">名称</label>
+			<input  class="inR form-control" ng-model="newpic['title']">
+			<span class="labelApp"><span style='color:red;line-height:40px'> * </span></span>
+		</div>
+		
+		<div class="submit">
+			<label class="labelApp">link</label>
+			<input  class="inR form-control" ng-model="newpic['link']">
+			<span style='color:red;line-height:40px'> * </span>
+		</div>	
+		
+		<div class="submit">
+			<label class="labelApp">描述</label>
+			<input  class="inR form-control" ng-model="newpic['note']">
+		</div>
+			
+		<div class="subButton">
+			<button class="btn btn-default" type="submit" ng-click="submitNewPic()" >提交</button>
+		</div>
+		
+	</div>
+		
+</div>	
+	

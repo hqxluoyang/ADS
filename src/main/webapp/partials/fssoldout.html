@@ -1,0 +1,33 @@
+<div class="release" id="fssoldoutControlPage">
+
+	<div class="rowLine header">
+		<div class="bg divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine width40"><span class="num">{{header['icon']}}</span></div>
+		<div class="bg divLine width100"><span class="name">{{header['title']}}</span></div>
+		<div class="divLine"><span class="position">{{header['country']}}</span></div>
+		<div class="bg divLine"><span class="type">{{header['language']}}</span></div>
+		
+		<div class="bg divLine"><span class="position">{{header['display']}}</span></div>
+		<div class="bg divLine"><span class="download">{{header['click']}}</span></div>
+		<div class="bg divLine"><span class="state">{{header['off']}}</span></div>
+		<div class="bg divLine"><span class="price">操作</span></div>
+	</div>
+	
+	<div id="soldoutGrid">
+		<div class="rowLine" ng-repeat="obj in soldoutPic" ng-class-odd="'bgeee'" >
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="divLine width40 hpoint"><img class="imagePhone" ng-src={{obj['png_path']}} ng-click="clickImage(obj)"></div>
+			<div class="divLine width100 hpoint" ng-click=showDetail(obj)><span class="name" >{{obj['title']}}</span></div>
+			<div class="divLine"><span class="type">{{obj['country']}}</span></div>
+			
+			<div class="divLine"><span class="developer">{{obj["language"]}}</span></div>
+			
+			
+			<div class="bg divLine hpoint" ng-click="display(obj)"><span class="position">{{obj['display']}}</span></div>
+			<div class="divLine hpoint" ng-click="getCount(obj)"><span class="type" >{{obj['click']}}</span></div>
+			<div class="divLine"><span class="developer">{{obj["off"]}}</span></div>
+			<div class="divLine"><button type="button" class="btn btn-info" ng-click="putawayAd(obj)">发布</button></div>	
+			<div class="divLine"><button type="button" class="btn btn-info" ng-click="delPic(obj)">删除</button></div>
+		</div>
+	</div>
+</div>	

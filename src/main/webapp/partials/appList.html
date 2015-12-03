@@ -1,0 +1,42 @@
+<div class="release" id="appControlPage">
+
+	<div class="rowLine search">
+		
+		<div class="bg divLine width150" style="margin-left:-50px;left:50%"><button type="button" ng-click = subAppP() class="btn btn-primary">添加App</button></div>
+		
+	</div>
+
+	<div class="rowLine header">
+		<div class="bg divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine width40"><span class="num">{{header['icon']}}</span></div>
+		<div class="bg divLine width100"><span class="name">{{header['name']}}</span></div>
+		<div class="bg divLine"><span class="position">{{header['channel']}}</span></div>
+		<div class="bg divLine"><span class="type">{{header['type']}}</span></div>
+		
+		<div class="bg divLine"><span class="developer">{{header['developer']}}</span></div>
+		
+		<div class="bg divLine"><span class="size">{{header['size']}}</span></div>
+		<div class="bg divLine"><span class="release">{{header['release']}}</span></div>
+		
+	</div>
+	
+	<div id="appListGrid">
+	
+		<div class="rowLine" ng-repeat="obj in releaseApp" ng-class-odd="'bgeee'">
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="divLine width40"><img class="image" ng-src={{obj['icon_path']}}></div>
+			<div class="divLine width100"><span class="name" ng-click=detailDbclick($index)>{{obj['name']}}</span></div>
+			<div class="divLine"><span class="position">{{obj['channel']}}</span></div>
+			<div class="divLine"><span class="type">{{obj['type']}}</span></div>
+			<div class="divLine"><span class="developer">{{obj["developer"]}}</span></div>
+			<div class="divLine"><span class="size">{{obj['size']}}</span></div>
+			<div class="divLine"><button type="button" ng-click=putaway(obj) class="btn btn-info" >上架</button></div>
+			<div class="divLine"><button type="button" ng-click=refreshApp(obj) class="btn btn-info">更新</button></div>
+		</div>
+	
+	</div>
+	
+	<div class = "submitApp">
+		
+	</div>	
+</div>	

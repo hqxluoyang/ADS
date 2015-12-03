@@ -1,0 +1,15 @@
+/target/*
+/src/main/webapp/.sass-cache/
+/src/main/webapp/scss/
+/src/main/webapp/css/*.css.map
+/src/main/resources/*
+/src/main/webapp/storage/*
+
+/log/*
+/run/*
+
+/src/main/webapp/index.html
+/target
+
+/target
+output.log*

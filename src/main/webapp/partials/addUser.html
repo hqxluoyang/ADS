@@ -1,0 +1,40 @@
+
+<div class ="header">
+    <span class="title">添加用户</span>
+	<button type="button" class="bntClose close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="subApp">
+	
+	<div class="submit">
+		<label class="labelApp">用户ID</label>
+		<input  ng-focus="focusId()"  class="inR form-control" id="userIdAdd"><span ng-show="userIdShow" style="color:red;margin-left:5px">用户ID名冲突</span>
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp">用户名</label>
+		<input ng-focus="focusName()"  class="inR form-control" id="userNameAdd"><span ng-show="nameShow" style="color:red;margin-left:5px">用户名冲突</span>
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp">用户密码</label>
+		<input  class="inR form-control" id="userPassWordAdd" type="password">
+	</div>
+	
+	
+	<div class="submit">
+		<label class="labelApp">渠道</label>
+		<input  class="inR form-control" id="userChannelAdd">
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp">组织</label>
+		<input  class="inR form-control" id="userGroup">
+	</div>
+	
+	<div class="subButton">
+		<button class="btn btn-default" type="submit" ng-click =submitUser() >提交</button>
+	</div>
+		
+</div>	
+	

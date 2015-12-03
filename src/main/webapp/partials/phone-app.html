@@ -1,0 +1,55 @@
+<div class="phoneList">
+		<div class="top10">
+			<img class="topImg" src="images/ic_rankings_top.png">
+		</div>
+		<div class="bar">
+			<div class="rowHeight">
+				<img class="back" src="images/ic_actionbar_back.png"> <span class="rank">Rankings</span>
+			</div>
+			<div class="rowHeight">
+				<a class="aRow" ng-click="checkBar('top10')">Top 10</a>
+				<a class="aRow" ng-click="checkBar('rec')">Recommend</a>
+			</div>
+		</div>
+		<div class="tipBar" id="barPosition">
+		</div>
+		
+		<div class="phoneContainer animate-switch-container" ng-switch on="switchPhone" id="phoneContainer">
+			<div class="animate-switch" ng-switch-when="top10">
+				<div class="phoneRow" ng-repeat="obj in phoneList">
+					<div class="phoneLeft">
+						<img ng-src={{obj['img']}}>
+					</div>
+					<div class="phoneRight">
+						<div class="contai">
+							<div style="height:20px;color:#212121;font-size:18px">
+								{{obj['an']}}
+							</div>
+							<div style="height:20px;color:#727272;font-size:16px;margin-top:5px;">
+								{{obj['category']}}
+							</div>
+						</div>
+					</div>
+		    	</div>
+	    	</div>
+	    	
+	    	<div class="animate-switch" ng-switch-when="recommend">
+				<div class="phoneRow" ng-repeat="obj in recommend">
+					<div class="phoneLeft">
+						<img ng-src={{obj['icon_path']}}>
+					</div>
+					<div class="phoneRight">
+						<div class="contai">
+							<div style="height:20px;color:#212121;font-size:18px">
+								{{obj['name']}}
+							</div>
+							<div style="height:20px;color:#727272;font-size:16px;margin-top:5px;">
+								{{obj['type']}}
+							</div>
+						</div>
+					</div>
+		    	</div>
+	    	</div>
+	    	
+		</div>
+	</div>

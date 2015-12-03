@@ -1,0 +1,25 @@
+
+
+
+--  WIFI万能钥匙
+SELECT code from app  where  name='WIFI万能钥匙' ;
+-- 3ee05cdc-1fd4-bea4-cb39-1cf0-470903d4
+
+
+--  详细点击保存到 download 里面
+SELECT * FROM download  where `code`='3ee05cdc-1fd4-bea4-cb39-1cf0-470903d4'  ;
+
+
+--  然后计划任务能把每天的次数合计到一条记录里.  然后再进行查询 .
+
+SELECT * FROM downstatistic  where `code`='3ee05cdc-1fd4-bea4-cb39-1cf0-470903d4' and  time='2015-06-12'  ;
+
+
+--  再就是统计页面中的数据是实时计算出来的.
+--  根据每个应用,每天的下载量,全部展示出来.... 只是查询次数太多,略慢.
+
+-- 特别注意:  clickstatistic有对应的click表,为什么showstatistic没有对应的show表呢? 
+--  这是因为 click表中type用以区分是click还是show.   1表示show,0表示click 
+
+
+

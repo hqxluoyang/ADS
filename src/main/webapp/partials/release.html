@@ -1,0 +1,38 @@
+<div class="release" id="releaseControlPage">
+
+	
+	
+	<div class="rowLine header">
+		<div class="bg divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine width40"><span class="num">{{header['icon']}}</span></div>
+		<div class="bg divLine width100"><span class="name">{{header['name']}}</span></div>
+	
+		<div class="bg divLine"><span class="position">{{header['channel']}}</span></div>
+		<div class="bg divLine"><span class="type">{{header['type']}}</span></div>
+		<div class="bg divLine"><span class="developer">{{header['developer']}}</span></div>
+		<div class="bg divLine"><span class="state">{{header['up_time']}}</span></div>
+		<div class="bg divLine"><span class="download">{{header['down']}}</span></div>
+		<div class="bg divLine"><span class="size">{{header['size']}}</span></div>
+		<div class="bg divLine"><span class="release" >{{header['release']}}</span></div>
+		
+	</div>
+	<div id="releaseGrid">
+		<div class="rowLine" ng-repeat="obj in releaseApp" ng-class-odd="'bgeee'">
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="divLine width40"><img class="image" ng-src={{obj['icon_path']}}></div>
+			<div class="divLine width100 hpoint" ng-click=detailDbclick($index)><span class="name" >{{obj['name']}}</span></div>
+			
+			<div class="divLine"><span class="position">{{obj['channel']}}</span></div>
+			<div class="divLine"><span class="type">{{obj['type']}}</span></div>
+			<div class="divLine"><span class="developer">{{obj["developer"]}}</span></div>
+			<div class="divLine"><span class="state">{{obj['up']}}</span></div>
+			<div class="divLine hpoint" ng-click=showDownPanel($index)><span class="download" >{{obj["down"]}}</span></div>
+			<div class="divLine"><span class="size">{{obj['size']}}</span></div>
+			<div class="divLine"><button type="button" ng-click=soldApp(obj) class="btn btn-info">下架</button></div>
+			
+			<div class="divLine width40"><button type="button" ng-click="changePositionTop($index ,1)" class="btn btn-info up" ng-show="userID != 'admin'"><img src="images/up.png"></button></div>
+			<div class="divLine width40"><button type="button" ng-click="changePositionTop($index , -1)" class="btn btn-info down" ng-show="userID != 'admin'"><img src="images/down.png"></button></div>
+			<div class="divLine"><button type="button" ng-click=refreshApp(obj) class="btn btn-info">更新</button></div>
+		</div>
+	</div>
+</div>	

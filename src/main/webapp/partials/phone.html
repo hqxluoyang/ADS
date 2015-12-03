@@ -1,0 +1,22 @@
+<div class ="header" style="display:none">
+    <span class="title">phone</span>
+	<button type="button" class="bntClose close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="subApp phone">
+	
+	<div ng-switch="phoneInfo">
+		<div ng-switch-when="phone_app">
+			<phoneApp control="appControl"></phoneApp>
+		</div>
+		
+		<div ng-switch-when="phone_pic">
+			<phonePic control="picControl"></phonePic>
+		</div>
+		
+		<div ng-switch-default>
+			<phoneDefault></phoneDefault>
+		</div>
+	</div>
+</div>	
+	

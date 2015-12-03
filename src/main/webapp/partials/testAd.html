@@ -1,0 +1,30 @@
+<div class="release" id="fsTestAdPage">
+
+	<div class="rowLine search">
+		
+		<div class="bg divLine width150" style="margin-left:-50px;left:50%"><button type="button" ng-click ="addPhone()" class="btn btn-primary">添加手机</button></div>
+		
+	</div>
+
+	<div class="rowLine header">
+		<div class="bg divLine width40"><span class="num">{{header['order']}}</span></div>
+		<div class="bg divLine width150"><span class="num">{{header['name']}}</span></div>
+		<div class="bg divLine width150"><span class="name">{{header['code']}}</span></div>
+	</div>
+	
+	<div id="fsTestAdGrid">
+	
+		<div class="rowLine" ng-repeat="obj in listAd" ng-class-odd="'bgeee'">
+			<div class="divLine width40"><span class="num">{{$index + 1}}</span></div>
+			<div class="divLine width150"><span class="type">{{obj['phname']}}</span></div>
+			<div class="divLine width150"><span class="developer">{{obj["phimei"]}}</span></div>
+			<div class="divLine"><button type="button" ng-click="deltestPhone(obj)" class="btn btn-info" >删除</button></div>
+			
+		</div>
+	
+	</div>
+	
+	<div class = "submitApp">
+		
+	</div>	
+</div>	

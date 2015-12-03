@@ -1,0 +1,29 @@
+<div id="top" class="top" ng-controller="header">
+	  <span class="title">闪传应用墙管理系统 </span>
+	  
+	  <div class="topLeft" ng-show="userControl == 'admin' ? true : false">
+	  		<button class="btn btn-large initial" ng-class="wallScreen==0 ? 'bntSty' : false" type="button" ng-click="changeWall()">应用墙</button>
+			<button class="btn btn-large initial" ng-class="wallScreen==1 ? 'bntSty' : false" ng-click = "changeAd()" type="button">开屏广告</button>
+	  </div>
+	  
+	  <div class="topRight">
+	  	<div class="user">
+	  		<div class="currentAdmin">
+	  			<span>当前用户:</span>
+	  			<span>{{userID}}</span>
+	 		 </div>
+	  		
+	  		<div class="currentAdmin" style="left:160px">
+	  			<span>语言:</span>
+	  			<span>{{lang}}</span>
+	  		</div>
+	  	</div>
+	  	
+	  	<div class="oper">
+	  		<button style="background:initial" class="btn btn-large initial" type="button" ng-click="changePassword()">修改密码</button>
+			<button style="background:initial" class="btn btn-large initial" ng-click = "loginOut()" type="button">退出</button>
+	  	</div>
+		
+		
+	  </div>
+</div>

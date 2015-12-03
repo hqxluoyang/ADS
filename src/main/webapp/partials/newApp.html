@@ -1,0 +1,69 @@
+<div class ="header">
+    <span class="title">添加App</span>
+	<button type="button" class="bntClose close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="subApp">
+	
+	<div class="submit">
+		<label class="labelApp">渠道</label>
+		<input  class="inR form-control" ng-model="newapp['channel']" disabled="disabled">
+		<span class="labelApp">(合作渠道唯一编码)</span>
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp">目标语言</label>
+		<input  class="inR form-control" ng-model="newapp['language']" disabled="disabled">
+		<span class="labelApp">(app计划投放国家<span style='color:red;line-height:40px'> * </span>)</span>
+		
+	</div>
+	
+	<div class="submit">
+		<label class="labelApp"></label>
+		<button class="btn btn-default" style="margin-left:20px;margin-top:5px;" type="submit" ng-click="uploadAppSub()" >App(上传)</button>
+		<input id="uplaodFile" type="file" style="display:none" class="inR form-control"  onchange="angular.element(this).scope(0).uploadChangeApp()" />
+		<div class="uploadProgress"  id="uploadPro">
+		</div>
+		
+		
+	</div>
+	
+	<div ng-show="appParm">
+		<div style="margin-left:124px;margin-top:5px"><img id="uploadImgSrc" style="width:40px;height:40px"/></div>
+		<span class="title">以下输入请按照目标国家的语言输入</span>
+		
+		<div class="submit" style="margin-top:20px">
+			<label class="labelApp">名称</label>
+			<input  class="inR form-control" ng-model="newapp['name']">
+			<span class="labelApp"><span style='color:red;line-height:40px'> * </span></span>
+		</div>
+		
+		<div class="submit">
+			<label class="labelApp">类别</label>
+			<input  class="inR form-control" ng-model="newapp['type']">
+			<span style='color:red;line-height:40px'> * </span>
+		</div>	
+		
+		<div class="submit">
+			<label class="labelApp">开发者</label>
+			<input  class="inR form-control" ng-model="newapp['developer']">
+			<span style='color:red;line-height:40px'> * </span>
+		</div>
+		
+		<div class="submit">
+			<label class="labelApp">描述</label>
+			<input  class="inR form-control" ng-model="newapp['describe']">
+		</div>
+		
+		<div class="submit">
+			<label class="labelApp">价格</label>
+			<input  class="inR form-control" ng-model="newapp['price']">
+		</div>
+			
+		<div class="subButton">
+			<button class="btn btn-default" type="submit" ng-click="submitNewApp()" >提交</button>
+		</div>
+	</div>
+		
+</div>	
+	
